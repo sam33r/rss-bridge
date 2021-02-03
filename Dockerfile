@@ -1,4 +1,6 @@
-FROM php:7-apache
+# To get this to run on RPi.
+# See https://github.com/RSS-Bridge/rss-bridge/issues/883
+FROM arm32v7/php:7-apache
 
 ENV APACHE_DOCUMENT_ROOT=/app
 
